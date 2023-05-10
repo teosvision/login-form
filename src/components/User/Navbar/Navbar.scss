@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 4rem;
+  align-items: center;
+  button {
+    font-weight: 700;
+    font-size: larger;
+    color: rgba(0, 0, 0, 0.542);
+  }
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2.5rem 1rem;
+  }
+}
