@@ -1,0 +1,40 @@
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  .login-div {
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    border-radius: 0.75rem;
+    padding: 2rem;
+    width: 480px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    .email {
+      display: grid;
+      gap: 1.5rem;
+      line-height: 1.2rem;
+      input {
+        background-color: rgb(240, 240, 240);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        font-weight: 600;
+        font-size: larger;
+      }
+
+      button {
+        background-color: rgb(235, 53, 138);
+        border-radius: 0.75rem;
+        padding: 1rem;
+        font-weight: 600;
+        font-size: larger;
+        color: white;
+      }
+    }
+  }
+}
