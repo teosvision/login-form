@@ -3,7 +3,7 @@ import "./Login.scss";
 import { useRef } from "react";
 import { useNavigate } from "react-router-dom";
 const Login = () => {
-  const emailRef = useRef();
+  const emailRef = useRef(null);
   const navigate = useNavigate();
 
   const [show, setShow] = useState(false);
