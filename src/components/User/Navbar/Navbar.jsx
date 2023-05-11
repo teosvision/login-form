@@ -3,6 +3,8 @@ import "./Navbar.scss";
 import { useNavigate } from "react-router-dom";
 const Navbar = ({ name }) => {
   const navigate = useNavigate();
+
+  //navigate to login and delete local storage values
   const Logout = () => {
     localStorage.setItem("isLoggedIn", "");
     localStorage.setItem("email", "");

@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../Navbar/Navbar";
 import "./Profile.scss";
 const Profile = () => {
-  const email = localStorage.getItem("email");
+  const email = localStorage.getItem("email"); // get email from local storage
   const state = {
     name: "FirstName",
     surname: "LastName",
