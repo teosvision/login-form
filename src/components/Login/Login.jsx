@@ -19,7 +19,7 @@ const Login = () => {
       setShow(true);
       setTimeout(() => {
         setShow(false);
-      }, 5000);
+      }, 6000);
     }
   };
 
@@ -32,16 +32,18 @@ const Login = () => {
   return (
     <div className="login">
       <form onSubmit={handleSubmit} className="form">
-        <h2>Login to Your Account</h2>
-        {show === false ? (
-          ""
-        ) : (
-          <p className="error">
-            Oops, there was an issue signing in:
-            <br /> That doesn't look like a valid email!
-          </p>
-        )}
-        <div className="email">
+        <div className="text">
+          <h2>Login to Your Account</h2>
+          {show === false ? (
+            ""
+          ) : (
+            <p>
+              Oops, there was an issue signing in:
+              <br /> That doesn't look like a valid email!
+            </p>
+          )}
+        </div>
+        <div className="submit">
           <input ref={emailRef} name="email" placeholder="Email" type="email" />
           <button type="submit">Sign In</button>
         </div>

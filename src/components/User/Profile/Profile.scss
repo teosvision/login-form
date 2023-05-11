@@ -3,9 +3,9 @@
   flex-direction: column;
   background: white;
   height: 100%;
-  border-left: 20px solid rgb(252, 57, 148);
+  border-left: 30px solid #ff5b90;
   @media (max-width: 768px) {
-    border-top: 20px solid rgb(252, 57, 148);
+    border-top: 20px solid #ff5b90;
     border-left: none;
   }
   .content {
@@ -15,7 +15,7 @@
     align-items: center;
     height: 100%;
     gap: 2rem;
-    font-weight: 600;
+    font-weight: 400;
 
     @media (max-width: 768px) {
       display: grid;
@@ -30,16 +30,16 @@
       display: flex;
       text-align: left;
       gap: 2rem;
-      background-color: rgba(237, 237, 237, 0.365);
+      background: rgba(190, 190, 192, 0.1);
       border-radius: 0.75rem;
       padding: 2rem;
 
       .data-inside {
         display: grid;
-        gap: 8px;
+        gap: 15px;
         .label {
           display: flex;
-          gap: 4px;
+          gap: 3px;
           @media (max-width: 1019px) {
             display: grid;
           }
@@ -56,17 +56,15 @@
     .about {
       display: grid;
       text-align: left;
-      width: 700px;
-      font-weight: 500;
+      width: 737px;
       gap: 0.5rem;
       p {
-        line-height: 1.15rem;
+        line-height: 19px;
         word-spacing: 0.05rem;
-        font-weight: 500;
       }
       @media (max-width: 768px) {
         width: 300px;
-        border-top: 2px solid rgb(228, 228, 228);
+        border-top: 1px solid #e5e5e5;
         padding: 2rem 0rem;
       }
       @media (max-width: 290px) {

@@ -5,7 +5,7 @@
   height: 100%;
   .form {
     background-color: white;
-    box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    box-shadow: 0px 10px 10px 2px rgba(51, 51, 51, 0.1);
     border-radius: 0.75rem;
     padding: 2rem;
     width: 480px;
@@ -15,8 +15,18 @@
     justify-content: center;
     align-items: center;
     gap: 30px;
-    h2 {
-      width: 280px;
+    .text {
+      display: grid;
+      gap: 1rem;
+
+      h2 {
+        width: 280px;
+      }
+      p {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 23.44px;
+      }
     }
     @media (max-width: 768px) {
       background: none;
@@ -25,20 +35,16 @@
       box-shadow: none;
     }
 
-    .error {
-      font-weight: 600;
-      width: 100%;
-    }
-    .email {
+    .submit {
       display: grid;
       gap: 16px;
       line-height: 1.2rem;
       input {
-        background-color: rgb(240, 240, 240);
-        border-radius: 0.75rem;
+        background: #f8f5f5;
+        border-radius: 10px;
         padding: 1rem;
-        font-weight: 600;
-        font-size: larger;
+        font-weight: 500;
+        font-size: 20px;
         transition: 0.2s ease-in-out;
         &:focus {
           outline: none;
@@ -47,11 +53,11 @@
       }
 
       button {
-        background-color: rgb(235, 53, 138);
-        border-radius: 0.75rem;
+        background-color: #ff5b90;
+        border-radius: 10px;
         padding: 1rem;
-        font-weight: 600;
-        font-size: larger;
+        font-weight: 500;
+        font-size: 20px;
         color: white;
       }
     }
