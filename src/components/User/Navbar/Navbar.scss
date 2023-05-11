@@ -5,14 +5,17 @@
   align-items: center;
   button {
     font-weight: 700;
-    font-size: larger;
+    font-size: large;
     color: rgba(0, 0, 0, 0.542);
   }
   @media (max-width: 768px) {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 2rem;
+    gap: 1rem;
     padding: 2.5rem 1rem;
+    h2 {
+      font-size: 23px;
+    }
   }
 }

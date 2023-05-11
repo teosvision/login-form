@@ -1,0 +1,14 @@
+.error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  gap: 1rem;
+  .link {
+    background-color: rgba(252, 57, 148, 0.7);
+    padding: 1rem 4rem;
+    border-radius: 0.75rem;
+  }
+}

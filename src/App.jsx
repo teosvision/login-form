@@ -3,9 +3,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Login from "./components/Login/Login";
 import Profile from "./components/User/Profile/Profile";
 import ProtectedRoute from "./components/ProtectedRoute";
+import ErrorPage from "./components/User/Error/ErrorPage";
 function App() {
-  const isLoggedIn = localStorage.getItem("isLoggedIn");
-  // console.log(isLoggedIn);
   return (
     <div className="App">
       <BrowserRouter>
@@ -14,11 +13,12 @@ function App() {
           <Route
             path="profile"
             element={
-              <ProtectedRoute isLoggedIn={isLoggedIn}>
+              <ProtectedRoute>
                 <Profile />
               </ProtectedRoute>
             }
           />
+          <Route path="*" element={<ErrorPage />} />
         </Routes>
       </BrowserRouter>
     </div>

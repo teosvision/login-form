@@ -14,12 +14,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 36px;
+    gap: 30px;
+    h2 {
+      width: 280px;
+    }
     @media (max-width: 768px) {
       background: none;
       width: 80%;
       color: white;
-      width: 100%;
       box-shadow: none;
     }
 
@@ -29,7 +31,7 @@
     }
     .email {
       display: grid;
-      gap: 1.5rem;
+      gap: 16px;
       line-height: 1.2rem;
       input {
         background-color: rgb(240, 240, 240);
@@ -37,6 +39,11 @@
         padding: 1rem;
         font-weight: 600;
         font-size: larger;
+        transition: 0.2s ease-in-out;
+        &:focus {
+          outline: none;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.404);
+        }
       }
 
       button {

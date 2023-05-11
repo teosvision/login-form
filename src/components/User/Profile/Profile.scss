@@ -16,8 +16,10 @@
     height: 100%;
     gap: 2rem;
     font-weight: 600;
+
     @media (max-width: 768px) {
       display: grid;
+      align-content: space-evenly;
       gap: 0rem;
     }
 
@@ -31,6 +33,18 @@
       background-color: rgba(237, 237, 237, 0.365);
       border-radius: 0.75rem;
       padding: 2rem;
+
+      .data-inside {
+        display: grid;
+        gap: 8px;
+        .label {
+          display: flex;
+          gap: 4px;
+          @media (max-width: 1019px) {
+            display: grid;
+          }
+        }
+      }
       @media (max-width: 768px) {
         background-color: white;
         flex-direction: column;
@@ -43,16 +57,16 @@
       display: grid;
       text-align: left;
       width: 700px;
-      font-weight: 600;
+      font-weight: 500;
       gap: 0.5rem;
       p {
         line-height: 1.15rem;
         word-spacing: 0.05rem;
-        font-size: medium;
+        font-weight: 500;
       }
       @media (max-width: 768px) {
         width: 300px;
-        border-top: 4px solid rgb(228, 228, 228);
+        border-top: 2px solid rgb(228, 228, 228);
         padding: 2rem 0rem;
       }
       @media (max-width: 290px) {

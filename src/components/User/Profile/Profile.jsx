@@ -20,19 +20,19 @@ const Profile = () => {
       <Navbar name={state.name} />
       <div className="content">
         <div className="data">
-          <div className="grid gap-2">
-            <label className="lg:flex gap-1 md:grid">
+          <div className="data-inside">
+            <label className="label">
               <h4>Full Name: </h4> {`${state.name} ${state.surname}`}
             </label>
-            <label className="lg:flex gap-1 md:grid">
+            <label className="label">
               <h4>Email:</h4> {email}
             </label>
           </div>
-          <div className="grid gap-2">
-            <label className="lg:flex gap-1 md:grid">
+          <div className="data-inside">
+            <label className="label">
               <h4>Phone:</h4> {state.phone}
             </label>
-            <label className="lg:flex gap-1 md:grid">
+            <label className="label">
               <h4>Position:</h4> {state.position}
             </label>
           </div>

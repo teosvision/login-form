@@ -1,13 +1,11 @@
-import { useNavigate } from "react-router-dom";
+import { Navigate } from "react-router-dom";
 const ProtectedRoute = ({ children }) => {
-  const navigate = useNavigate();
   const isLoggedIn = localStorage.getItem("isLoggedIn");
-  console.log(isLoggedIn);
-  if (isLoggedIn === "false" || !isLoggedIn) {
-    return navigate("/");
-  } else {
-    return children;
+  const email = localStorage.getItem("email");
+  if (!isLoggedIn || !email) {
+    return <Navigate to="/" replace />;
   }
+  return children;
 };
 
 export default ProtectedRoute;
