@@ -7,6 +7,8 @@ const Login = () => {
   const navigate = useNavigate();
 
   const [show, setShow] = useState(false);
+
+  // If localstorage values exist navigate to profile / navigate to login and show error
   const handleSubmit = (e) => {
     e.preventDefault();
 
